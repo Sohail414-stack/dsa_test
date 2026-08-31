@@ -3,7 +3,8 @@ public class snakeprintcolumwise {
   
 
     public static void main(String[] args) {
-        int arr[][]=new int[4][4];
+        int arr[][]=new int[3][3];
+        int arr2[][]=new int[3][3];
         Scanner sc=new Scanner(System.in);
         System.out.println("enter element");
         for(int i=0;i<arr.length;i++){
@@ -14,34 +15,32 @@ public class snakeprintcolumwise {
         }
         System.out.println("Original element is : ");
           
-        for(int i=arr.length-1;i>=0;i--){
-            for(int j=0;j<arr[0].length;j++){
-                System.out.print(arr[i][j]+ " ");
+        for(int i=0;i<arr.length;i++){
+            for(int j=arr[0].length-1;j>=0;j--){
+                arr2[i][j]=arr[i][j];
+                System.out.print(arr2[i][j]+ " ");
             }
             System.out.println();
         }
         System.out.println();
-        System.out.println("sn ake printing...");
+        System.out.println("snake printing...");
           
-        for(int i=0;j<arr.length;i++){
-            if(i%2==0){
-              for(int j=0;j<arr[0].length;j++){
-                 System.out.print(arr[i][j]+" ");
+        for(int i=arr.length-1;i>=0;i--){
+            
+              for(int j=arr[0].length-1;j>=0;j--){
+                 System.out.print(arr2[i][j]+" ");
               }
+               System.out.println();
 
             }
-            else{
-                for(int j=arr[0].length-1;j>=0;j--){
-                     System.out.print(arr[i][j]+ " ");
+          
 
-                }
-
-            }
-            System.out.println();
+            
+           
            
           
     }
 }
-}
+
 
 
