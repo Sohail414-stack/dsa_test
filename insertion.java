@@ -36,10 +36,10 @@ public class insertion{
 public static void main(String[] args) {
     insertion i=new insertion();
     int arr[]={20,1,4,3,8,9};
-    // i.bubble(arr);
-    // for(int el:arr){
-    //     System.out.print(el+ " ");
-    // }
+    i.bubble(arr);
+    for(int el:arr){
+        System.out.print(el+ " ");
+    }
     System.out.println();
     i.selection(arr);
     for(int el:arr){
